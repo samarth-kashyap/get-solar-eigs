@@ -8,12 +8,12 @@ The source of the generated data files are hosted in a OneDrive cloud location w
 
 ## Scaling and normalization of eigenfunctions
 For ease of reference, let U be the radial eigenfunction and V be the horizontal eigenfunction. 
-* *Unscaled eigenfunction*: U and V are unscaled and are actually the U_{nl}(r) and V_{nl}(r) respectively. This feature is only available in ```efs_Antia``` as of now.
-* *Scaled eigenfunctions*: U and V are scaled by the factor sqrt(rho) * r. This feature is available in both ```efs_Antia``` and ```efs_Jesper```.
+* *Unscaled eigenfunction*: U and V are unscaled and are actually the $U_{nl}(r)$ and $V_{nl}(r)$ respectively. This feature is only available in ```efs_Antia``` as of now.
+* *Scaled eigenfunctions*: U and V are scaled by the factor $r\sqrt{\rho}$. This feature is available in both ```efs_Antia``` and ```efs_Jesper```.
 
 The eigenfunctions (scaled or unscaled) are stored after normalization. This means:
-* For unscaled eigenfunctions: Integrating [U * U + l(l+1) * V * V] * rho * r * r over the solar radius should give 1.0.
-* For scaled eigenfunctions: Integrating [U * U + l(l+1) * V * V] over the solar radius should give 1.0.
+* For unscaled eigenfunctions: Integrating $[U^2 + \ell(\ell+1) V^2] \rho r^2$ over the solar radius should give 1.0.
+* For scaled eigenfunctions: Integrating $[U^2 + \ell(\ell+1) V^2]$ over the solar radius should give 1.0.
 
 ## How to use the package
 
